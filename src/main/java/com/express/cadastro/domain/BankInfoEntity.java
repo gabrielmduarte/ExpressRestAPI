@@ -3,6 +3,7 @@ package com.express.cadastro.domain;
 import com.express.cadastro.domain.enums.AccountType;
 import lombok.Data;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -11,6 +12,7 @@ import javax.persistence.Table;
 
 @Data
 @Table(name = "bankInfo")
+@Entity
 public class BankInfoEntity {
 
     public static final String SEQUENCE_NAME = "BANKSEQUENCE";

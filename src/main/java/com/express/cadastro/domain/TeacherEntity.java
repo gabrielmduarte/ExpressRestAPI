@@ -37,11 +37,9 @@ public class TeacherEntity {
     private String email;
 
     @OneToOne(cascade = javax.persistence.CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(referencedColumnName = "id", name = "bankInfoId")
     private BankInfoEntity bankInfo;
 
     @OneToOne(cascade = javax.persistence.CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(referencedColumnName = "id", name = "addressId")
     private AddressEntity address;
 
 }

@@ -21,7 +21,7 @@ import java.util.List;
 @ToString(of = "id")
 public class ClassroomEntity {
 
-    public static final String SEQUENCE_NAME = "CLASSROOM";
+    public static final String SEQUENCE_NAME = "CLASSROOMSEQUENCE";
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = SEQUENCE_NAME)
