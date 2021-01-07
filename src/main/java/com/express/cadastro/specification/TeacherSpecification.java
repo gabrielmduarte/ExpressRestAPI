@@ -35,12 +35,15 @@ public class TeacherSpecification {
             if(name != null) {
                 predicates.add(byName(name).toPredicate(root, query, criteriaBuilder));
             }
+
             if(document!=null) {
                 predicates.add(byDocument(document).toPredicate(root, query, criteriaBuilder));
             }
+
             if(email!=null) {
                 predicates.add(byEmail(email).toPredicate(root, query, criteriaBuilder));
             }
+
             predicates.add(active().toPredicate(root, query, criteriaBuilder));
 
             return criteriaBuilder.and(predicates.toArray(new javax.persistence.criteria.Predicate[]{}));

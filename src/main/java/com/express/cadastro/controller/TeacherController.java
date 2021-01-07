@@ -34,8 +34,7 @@ public class TeacherController {
             @RequestParam(value = "name", required = false) final String name,
             @RequestParam(value = "document", required = false) final String document,
             @RequestParam(value = "email", required = false) final String email,
-            @PageableDefault(sort = "id") final Pageable pageable
-            ) {
+            @PageableDefault(sort = "id") final Pageable pageable) {
         return service.findAll(name, document, email, pageable);
     }
 
