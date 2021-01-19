@@ -3,6 +3,8 @@ package com.express.cadastro.specification;
 import com.express.cadastro.domain.StudentEntity;
 import org.springframework.data.jpa.domain.Specification;
 
+import javax.persistence.criteria.Join;
+import javax.persistence.criteria.JoinType;
 import javax.persistence.criteria.Predicate;
 import java.util.ArrayList;
 import java.util.List;
