@@ -38,4 +38,6 @@ public class ClassroomEntity {
 
     @ManyToMany
     private List<StudentEntity> studentsEnrolled = new ArrayList<>();
+
+    private Boolean active;
 }
